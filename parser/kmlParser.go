@@ -21,7 +21,8 @@ func UnMarshallKml(filePath string) model.Folder {
 
 	err = xml.Unmarshal(byteValue, &root)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println(err, "--", filePath)
+		panic(err)
 	}
 
 	return root.Folder

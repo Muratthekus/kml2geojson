@@ -1,1 +1,4 @@
 .idea
+inputs/*
+outputs/*
+filesv2/*
